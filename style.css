@@ -1,0 +1,406 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    background-color: #000;
+    color: #fff;
+    overflow: hidden;
+}
+
+.main {
+    display: flex;
+    height: 100vh;
+    padding: 0.5rem;
+}
+
+.sidebar {
+    width: 21rem;
+    background-color: #000;
+    margin-right: 0.5rem;
+}
+
+.main-content {
+    background-color: #121212;
+    flex: 1;
+    border-radius: 1rem;
+    overflow: auto;
+    padding: 0 1.5rem 0 1.5rem;
+}
+
+
+.nav {
+    background-color: #121212;
+    display: flex;
+    flex-direction: column;
+    height: 6.04rem;
+    border-radius: 1rem;
+    justify-content: center;
+    padding: 0.5rem 0.75rem;
+}
+
+.nav .nav-option a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav .nav-option {
+    line-height: 2.5rem;
+    opacity: 0.7;
+}
+.nav #home {
+    opacity: 1;
+}
+
+.nav .nav-option:hover {
+    opacity: 1;
+}
+
+.nav .nav-option {
+    line-height: 2.5rem;
+}
+
+.nav .nav-option i {
+    font-size: 1.25rem;
+}
+
+.nav .nav-option a {
+    font-size: 1rem;
+    margin-left: 1rem;
+}
+
+.library {
+    overflow: auto;
+    height: 100%;
+    background-color: #121212;
+    border-radius: 1rem;
+    margin-top: 0.5rem;
+    padding: 0.5rem 0.75rem;
+}
+
+.lib-option a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    margin-left: 1rem;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.lib-option img {
+    height: 1.5rem;
+    width: 1.25rem;
+}
+
+.libaray .icons {
+    font-size: 1.25rem;
+    display: flex;
+}
+
+.library .icons i {
+    opacity: 0.7;
+    margin-right: 1rem;
+}
+
+.library .icons i:hover {
+    opacity: 1;
+}
+
+.options .lib-option {
+    opacity: 0.7;
+}
+
+.options .lib-option:hover {
+    opacity: 1;
+}
+
+.box {
+    background-color: #232323;
+    height: 8rem;
+    border-radius: 0.5rem;
+    margin: 0.75rem 0 1.75rem 0;
+    padding: 0.75rem 1rem;
+}
+
+.box-p1 {
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.box-p2 {
+    font-size: 0.85rem;
+    opacity: 0.9;
+}
+
+.badge {
+    background-color: #fff;
+    border: none;
+    font-weight: 700;
+    border-radius: 1rem;
+    height: 2rem;
+    margin-top: 0.5rem;
+    width: fit-content;
+    padding: 0.25rem 1rem;
+}
+
+.dark-badge {
+    background-color: #000;
+    color: #fff;
+}
+
+.sticky-nav {
+    position: sticky;
+    top: 0;
+    background-color: #121212;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0 1rem 0;
+    z-index: 1;
+}
+
+.sticky-nav-icons {
+    margin-left: 0.5rem;
+}
+
+.sticky-nav-options {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sticky-nav-options i {
+    margin-right: 0.5rem;
+}
+.sticky-nav-options .nav-items {
+    margin-right: 0.75rem;
+}
+
+
+@media (max-width: 1000px) {
+    .hide {
+        display: none;
+    }
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 12rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-right: 0.5rem;
+    margin-top: 1rem;
+}
+
+.card-img {
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+.popular-artist-img {
+    border-radius: 50%;
+}
+
+.card-title {
+    font-weight: 600;
+}
+
+.card-info {
+    font: 0.75rem;
+    opacity: 0.8;
+}
+
+.card:hover {
+    background-color: #232323;
+}
+
+.footer {
+    height: 14rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.line {
+    width: 100%;
+    height: 30%;
+    border-top: 0.1rem solid #fff;
+    opacity: 0.4;
+}
+
+.music-player {
+    position: fixed;
+    bottom: 0;
+    background-color: #000;
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.album {
+    width: 25%;
+}
+
+.player {
+    width: 50%;
+}
+
+.controls {
+    width: 25%;
+}
+
+.player-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.player-control-icon {
+    height: 1rem;
+    margin-right: 1.75rem;
+    opacity: 0.7;
+}
+
+.player-control-icon:hover {
+    opacity: 1;
+}
+
+.play-pause {
+    height: 2rem;
+    opacity: 1;
+}
+
+.curr-time, .tot-time {
+    font-size: 0.9rem;
+}
+
+.progress-bar {
+    width: 75%;
+    appearance: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.progress-bar::-webkit-slider-runnable-track {
+    background-color: #ddd;
+    border-radius: 5.25rem;
+    height: 0.2rem;
+}
+
+.progress-bar::-webkit-slider-thumb {
+    appearance: none;
+    height: 1rem;
+    width: 1rem;
+    background-color: #1bd760;
+    border-radius: 50%;
+    margin-top: -6px;
+}
+
+.progress-bar::-webkit-slider-runnable-track:hover {
+    background-color: #1bd760;
+
+}
+
+.album {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.album-image {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 0.5rem;
+}
+
+.album-detail {
+    font-size: 0.8rem;
+}
+
+
+
+.album-icons {
+    display: flex;
+    gap: 1rem;
+}
+
+.album-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.album-icon:hover {
+    opacity: 1;
+}
+
+.album-detail p {
+    margin: 0;
+}
+
+.album-detail {
+    display: flex;
+    flex-direction: column;
+}
+
+.album-detail p {
+    font-size: 0.9rem;
+    margin-bottom: 0.25rem;
+    margin-right: 3rem;
+}
+
+.album-detail .album-title {
+    font-weight: 700;
+    cursor: pointer;
+    padding-bottom: 0.3rem;
+}
+
+.album-detail .album-info {
+    opacity: 0.7;
+}
+
+.album-detail .album-info:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.controls {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.control-icons {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.control-icon {
+    height: 2rem;
+}
+
+.control-range {
+    width: 5rem;
+    height: 0.2rem;
+    background-color: gray;
+    appearance: none;
+    cursor: pointer;
+}
+
+.control-range::-webkit-slider-thumb {
+    appearance: none;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background: white;
+    cursor: pointer;
+}
