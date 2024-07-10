@@ -1,4 +1,4 @@
-#Spotify Clone
+#Git Learning
 
 Learning Git and Github
 
